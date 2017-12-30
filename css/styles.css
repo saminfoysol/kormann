@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+*{
+	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
+}
+
+body{
+	margin:0;
+	font-family: 'Raleway', serif;
+	text-align: center;
+}
+
+/*make images fit properly in containers */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container{
+	width: 95%;
+	margin: 0 auto;
+	max-width: 70em;
+}
+
+/*buttons*/
+
+.button {
+	display: inline-block; /*prevent collisions*/
+	font-size: 1.15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+
+	padding: .5em 1.75em;
+}
+
+@media (min-width: 60rem){
+	.button {
+		font-size: 1.5rem;
+	}
+}
+
+.button-small{
+	background: rgba(0, 0, 0, 0.3);
+	font-size: .9rem;
+	font-weight: 700;
+	color:orange;
+}
+
+.button-small:hover,
+.button-small:focus{
+	background: orange;
+	color: #232323;
+
+}
+
+.button-accent {
+	color: #00ff6c;
+	border-color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus{
+	background: #00ff6c;
+	color: #232323;
+
+}
+
+.button-dark {
+	color: #232323;
+	border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus{
+	background: #232323;
+	color: #00ff6c;
+
+}
+
+/*typography
+================*/
+
+h1{
+	font-weight: 300;
+	font-size: 1.7rem;
+	margin-top: 0;
+}
+
+p{
+	margin-top:0;
+	line-height: 1.5;
+}
+
+p:last_of-type{
+	margin-bottom: 0;
+}
+
+.title {
+	
+	font-size: 2.5rem;
+	margin-bottom: .5em;
+	font-weight: 900;
+	margin-top: 1em;
+	border-width: 2px;
+	border-style: solid;
+	margin-left: 4.0em;
+	margin-right: 4.0em;
+	background: rgba(0, 0, 0, 0.3);
+	text-transform: lowercase;
+
+	
+	
+}
+
+.title-box{
+
+}
+
+.title span{
+	font-weight: 20;
+	display: block;
+	font-size: .9em;
+}
+
+@media (min-width: 60rem){
+	.title{
+		font-size: 4.3rem;
+	}
+	.title span{
+
+		font-size: 2.3rem;
+	}
+}
+
+
+
+/*navbar
+======================*/
+
+/* header
+
+===============*/
+
+header{
+	position: absolute;/*make this appear under bgd image*/
+	left:0;
+	right:0;
+	margin: 1em;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li{
+	display: inline-block;
+	margin: 1em;/*distance between elements in list*/
+}
+
+nav a{
+	font-weight: 900;
+	text-decoration: none;
+	text-transform:uppercase;
+	font-size:.8rem;
+	padding: .5em; /*padding increases clickable area*/
+	
+	color: #FFF;
+}
+
+nav a:hover,
+nav a:focus {
+	color: #DDD;
+}
+
+
+/* home-hero
+=========================*/
+
+.home-hero{
+	background-image: url(../img/background5.jpg);
+	padding: 10em 0;
+	color: white;
+	background-size: cover;
+	background-position: center;
+	/*keeps the pic locked*/
+	background-attachment: fixed;
+	
+}
+
+
+
+@media (min-width: 60rem) {
+	.home-hero{
+		height: 100vh;
+		padding-top: 30vh;
+	}
+}
