@@ -18,7 +18,7 @@
             });*/
 
 function imagesPreload(){
-     var imgArray = new Array("img/background3.jpg", "img/background16.jpg", "img/background19.jpg","img/background24.jpg","img/background21.jpg","img/background14.jpg");
+     var imgArray = new Array("img/background1.png","img/background3.jpg", "img/background16.jpg", "img/background19.jpg","img/background24.jpg","img/background21.jpg","img/background14.jpg");
      for (var i=0; i<imgArray.length; i++) {
          (new Image()).src = imgArray[i];
      }
@@ -29,7 +29,8 @@ function imagesPreload(){
      for (var i=0; i<imgArray.length; i++) {
          (new Image()).src = imgArray[i];
      }
-    
+     
+
     document.getElementById("first").onmouseover = function fun() {
         $('.home-hero').css('background-image','url(img/background3.jpg)').fadeIn(3000);
         //validation code to see State field is mandatory.  

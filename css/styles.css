@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 *{
 	box-sizing: border-box;
 	transition: all ease-in-out 250ms;
@@ -6,7 +8,7 @@
 
 body{
 	margin:0;
-	font-family: 'Raleway', serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	text-align: center;
 }
 
@@ -101,14 +103,14 @@ p:last_of-type{
 	
 	font-size: 2.5rem;
 	margin-bottom: .5em;
-	font-weight: 900;
+	font-weight: 200;
 	margin-top: 1em;
 	border-width: 2px;
 	border-style: solid;
 	margin-left: 4.0em;
 	margin-right: 4.0em;
 	background: rgba(0, 0, 0, 0.3);
-	text-transform: lowercase;
+	text-transform: uppercase;
 
 	
 	
@@ -119,9 +121,10 @@ p:last_of-type{
 }
 
 .title span{
-	font-weight: 20;
+	font-weight: 0;
 	display: block;
 	font-size: .9em;
+	
 }
 
 @media (min-width: 60rem){
