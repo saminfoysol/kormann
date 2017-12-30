@@ -4,6 +4,9 @@
 *{
 	box-sizing: border-box;
 	transition: all ease-in-out 250ms;
+	-webkit-backface-visibility: hidden;
+-moz-backface-visibility:    hidden;
+-ms-backface-visibility:     hidden;
 }
 
 body{
@@ -124,7 +127,7 @@ p:last_of-type{
 	font-weight: 0;
 	display: block;
 	font-size: .9em;
-	
+
 }
 
 @media (min-width: 60rem){
